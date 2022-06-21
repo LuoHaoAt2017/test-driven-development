@@ -4,7 +4,7 @@ import { setupServer } from 'msw/node';
 import { render, fireEvent, waitFor, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Mock, { Random } from 'mockjs';
-import { FetchList } from '../src/components/Fetch';
+import { FetchList } from '../src/components/FetchList';
 
 const server = setupServer(
   rest.get('/persons', function (req, res, ctx) {
